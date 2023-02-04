@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "build": "webpack --mode=development",
-    "serve": "webpack-dev-server"
+    "serve": "webpack-dev-server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,7 @@
     "favicons": "^7.0.2",
     "favicons-webpack-plugin": "^6.0.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
     "node-sass": "^8.0.0",
